@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="validation.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="header"></div>
+  <div id="content">
+    <form id="form-1" action="http://localhost/school_info_form/student_base_info.php" method="post">
+    <div id="intro" class="form">
+      <h1>Student Info</h1>
+      <p id="description">This is a form where you can enter the info asked</p>
+    </div>
+    <div id="email" class="form">
+      <label for="your_email">Email</label>
+      <input type="email" id="your_email" placeholder="Your Email" class="non-radio" name="email" >
+    </div>
+    <div id="FirstName" class="form">
+      <label for="your_first_name">First Name</label>
+      <input type="text" id="your_first_name" placeholder="Your first name" class="non-radio" name="first_name" >
+    </div>
+
+    <div id="Last_name" class="form">
+      <label for="your_last_name">Last Name</label>
+      <input type="text" id="your_last_name" placeholder="Your last name" class="non-radio" name="last_name">
+    </div>
+    <div id="Parents_Phone_Number" class="form">
+      <label for="phone">Enter your dads/moms phone number:</label>
+      <input type="tel" id="phone" name="phone" class="non-radio">
+    </div>
+    <div id="House" class="form">
+      <!--<ul></ul>-->
+      <label>House: <br></label>
+      <input type="radio" name="house" id="Aryabhatta" value="Aryabhatta">
+      Arryabhatta<br>
+      <input type="radio" name="house" id="Apple" value="Apple">
+      Apple<br>
+      <input type="radio" name="house" id="Rohini" value="Rohini">
+      Rohini<br>
+      <input type="radio" name="house" id="Bhaskar" value="Bhaskar">
+      Bhaskar<br>
+    </div>
+    <div id="Birthday" class="form">
+      <label for="birthday_date" id="bday">Birthday</label>
+      <input type="datetime" id="birthday_date" name="birthday">
+    </div>
+    <div>
+      <input type="submit" value="Submit" class="bottom_buttons" onlick="submitForm()">
+      <input type="reset" value="Clear Form" class="bottom_buttons">
+    </div>
+  </form>
+  </div>
+  <div id="footer">
+    <p id="copyright_text">This form is created by a group of students of the school <em>&copy;BCM Arya</em></p>
+    <h3>BCM ARYA INTERNATIONAL</h3>
+    <img src="images\bcm_logo.jpeg">
+  </div>
+</div>
+</body>
+</html>

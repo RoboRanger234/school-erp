@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="dirty.css">
+</head>
+<body>
+<div id="container">
+    <form action="http://localhost/school_erp/validate_student.php" method="post">
+        <fieldset>
+            <legend id="main_title">Log in check:-</legend>
+            <div id="enter_id">
+                <label for="school_assigned_student_id" id="stud_id_heading" >Student Id</label>
+                <textarea id="school_assigned_student_id" name="school_assigned_student_id" required></textarea>
+            </div>
+            <button id="retrieve_account" name="retrieve_account" type="submit">Retrieve account</button>
+            <p id="new-register" name="new-register">Not a student you can  <a href="sign_up.html">register</a></p>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
